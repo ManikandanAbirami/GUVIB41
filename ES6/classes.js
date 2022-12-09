@@ -35,6 +35,7 @@ class Employee extends Person {
 
   getID() {
     console.log("From Employee function getID: " + this.id);
+    return true;
   }
 }
 

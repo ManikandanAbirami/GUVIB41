@@ -15,6 +15,8 @@
 
 //We will push the code to GIT
 
+//JSX - HTML-looking syntax
+
 <html>
   <head>
   </head>
