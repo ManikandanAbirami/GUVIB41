@@ -1,6 +1,6 @@
 //ReactJS? - JS Library used for creating UI
 //ReactJS History?
-//Advatages - SPA - No page reloads, No extra wait time
+//Advantages - SPA - No page reloads, No extra wait time
 //DOM??? Virtual DOM?? - Document Object Model
 
 //Virtual DOM - "The Virtual DOM(VDOM) is a programming concept where an ideal, or 'virtual',
@@ -16,6 +16,10 @@
 //We will push the code to GIT
 
 //JSX - HTML-looking syntax
+
+//Components - Independent & Reusable code that can be plugged anywhere, anytime. 
+//It also allows to make changes to code dynamically.
+//Tyes of components - Functional(Stateless) & Class(Stateful)
 
 <html>
   <head>

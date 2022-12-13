@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import Header from './Header';
 
 
 //react.createElement(element_name, element_properties, children)
@@ -11,9 +12,7 @@ function App() {
   let name = 'Guvi B41-WD'
   return (
     <div>
-      <div className="header">
-        Phone Book Application
-      </div>
+      <Header />
       <button> Add </button>
       <div>
         <span> Name </span><br />

@@ -28,8 +28,14 @@ function modifyCartItems() {
 }
 var item = modifyCartItems();
 
-item.add();
-item.add();
-item.add();
-item.add();
-item.getCount();
+function add(a, b) {
+  return a + b;
+}
+
+// item.add();
+// item.add();
+// item.add();
+// item.add();
+// item.getCount();
+var result = add(10, 20);
+console.log("Return function : " + result);
