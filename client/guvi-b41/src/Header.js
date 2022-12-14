@@ -1,10 +1,10 @@
 import React from "react";
 import './Header.css';
 
-function Header() {
+function Header(props) {
   return (
     <div className="header">
-      Phone Book Application
+      {props.heading}
     </div>
   )
 }

@@ -21,6 +21,23 @@
 //It also allows to make changes to code dynamically.
 //Tyes of components - Functional(Stateless) & Class(Stateful)
 
+//Switch from functional component to class component
+//Rendering content Dynamically
+//summary - React basics part 1
+
+//React basics part 2
+//Props - Important
+//Event Handling
+//Add users
+
+//State - Important
+//Component Lifecycle - Important
+//Routing - Important
+//Delete Users
+//React Hooks - Important
+
+
+
 <html>
   <head>
   </head>

@@ -19,13 +19,6 @@ function App() {
         <span> Ph No </span>
       </div>
     </div>
-
-    // <div id="name">
-    //   <p> MERN STACK </p>
-    // </div>
-
-    // React.createElement("div", { id: "name" },
-    //   React.createElement("p", null, "MERN STACK"))
   );
 }
 
