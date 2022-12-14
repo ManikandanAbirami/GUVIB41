@@ -25,6 +25,22 @@
 //Rendering content Dynamically
 //summary - React basics part 1
 
+
+// Summary - React Basics(part 1)
+// Environment Setup
+// Code Cleanup
+// JSX - HTML looking syntax
+// Difference between JSX and HTML
+// Curly Braces
+// React.creatElement() method
+// ReactDOM.render() method
+// Components
+// Styling componets
+// Dynamically injecting data using map() method
+
+
+
+
 //React basics part 2
 //Props - Important
 //Event Handling
