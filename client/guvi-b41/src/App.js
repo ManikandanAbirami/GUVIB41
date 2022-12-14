@@ -29,7 +29,7 @@ function App() {
   ]
   return (
     <div className='component-container'>
-      <Header />
+      <Header heading="Phone Directory Application" />
       <div className='component-body-container'>
         <button className='custom-btn add-btn'> Add </button>
 
@@ -50,6 +50,7 @@ function App() {
         }
 
       </div>
+      <Header footer="Phone Directory Application - Footer" />
     </div>
   );
 }

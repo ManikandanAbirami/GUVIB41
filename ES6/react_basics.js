@@ -42,7 +42,8 @@
 
 
 //React basics part 2
-//Props - Important
+//Props - Important : It help you to pass values from a parent component to a child component so that they can be
+//accessed within the child component
 //Event Handling
 //Add users
 
