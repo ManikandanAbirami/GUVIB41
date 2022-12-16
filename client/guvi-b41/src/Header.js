@@ -21,7 +21,6 @@ class Header extends Component {
     return (
       <div className='header'>
         {this.props.heading}
-        {this.props.footer}
       </div>
     )
   }
