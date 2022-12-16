@@ -55,6 +55,6 @@ export class App extends Component {
 
 //react.createElement(element_name, element_properties, children)
 
-//ReactDOM.render(ar1, arg2); arg1 - What to render, where to render
+//ReactDOM.render(ar1, arg2); arg1 - What to render, where to render.
 
 export default App;

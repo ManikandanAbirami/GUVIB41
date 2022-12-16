@@ -43,11 +43,15 @@
 
 //React basics part 2
 //Props - Important : It help you to pass values from a parent component to a child component so that they can be
-//accessed within the child component
+//                    accessed within the child component
 //Event Handling
 //Add users
 
-//State - Important
+//State - Important :  It is something that is controlled within a component, unlike props, 
+//                     which are controlled by a parent component. Also, a change in state calls
+//                     the render() method again. render() method is present only inside a class
+//                     component because a class component extends the Component class.
+
 //Component Lifecycle - Important
 //Routing - Important
 //Delete Users

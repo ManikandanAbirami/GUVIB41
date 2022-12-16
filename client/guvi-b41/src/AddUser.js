@@ -2,6 +2,15 @@ import React, { Component } from 'react'
 import Header from './Header'
 import './AddUser.css'
 export class AddUser extends Component {
+  constructor() {
+    super();
+    this.state = {
+      id: 0,
+      name: '',
+      phone: ''
+    }
+  }
+
   render() {
     return (
       <div>
