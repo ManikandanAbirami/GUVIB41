@@ -3,26 +3,34 @@ import './App.css';
 import Header from './Header';
 
 export class App extends Component {
-  users = [
-    {
-      id: 100,
-      name: "Jack",
-      ph: "8987898989",
-    },
-    {
-      id: 101,
-      name: "Jill",
-      ph: "7676768978",
-    },
-    {
-      id: 102,
-      name: "Mary",
-      ph: "9089787678"
-    }
-  ]
+  // users = [
+  //   {
+  //     id: 100,
+  //     name: "Jack",
+  //     ph: "8987898989",
+  //   },
+  //   {
+  //     id: 101,
+  //     name: "Jill",
+  //     ph: "7676768978",
+  //   },
+  //   {
+  //     id: 102,
+  //     name: "Mary",
+  //     ph: "9089787678"
+  //   }
+  // ]
   deleteHandler(msg) {
     alert("Display msg: " + msg);
   }
+
+  constructor() {
+    super();
+    this.state = {
+      userListToShow: []
+    }
+  }
+
   render() {
     return (
       <div className='component-container'>
@@ -35,7 +43,7 @@ export class App extends Component {
             <span className='grid-item phone-heading'> Ph No </span>
           </div>
           {
-            this.users.map(user => {
+            this.state.userListToShow.map(user => {
               return <div key={user.id} className='grid-container'>
                 <span className='grid-item'> {user.name} </span>
                 <span className='grid-item'> {user.ph} </span>
@@ -47,7 +55,6 @@ export class App extends Component {
           }
 
         </div>
-        <Header footer="Phone Directory Application - Footer" />
       </div>
     )
   }

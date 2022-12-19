@@ -52,7 +52,27 @@
 //                     the render() method again. render() method is present only inside a class
 //                     component because a class component extends the Component class.
 
+//Note:
+//1. State can be maintained inside a class component only.
+//2. State is always initialised inside the class constructor.
+//3. In case you define the constructor of a class, you need to call the super() method
+//   in the first statement of the construcor definition. This method calls the construtor
+//   of the parent class.
+//4. To set the state, you must always use the setState() method and must never directly
+//   manipulate the application's state. However, setState() should never be called inside
+//   the constructor.
+//5. Whenever state is changed, the render() method of the class is called again.
+
 //Component Lifecycle - Important
+//1. The component lifecycle in React varies from one process to another.
+//2. There are totally 3 process - Mounting, Updating, and Unmounting.
+//Mounting - It refers to the instance(object is an instance of class) 
+//           of a component being created and inserted into the DOM.
+//Updating - denotes the instance of a component being updated by props or state.
+//Unmounting - refers to the component being removed from DOM.
+
+
+
 //Routing - Important
 //Delete Users
 //React Hooks - Important

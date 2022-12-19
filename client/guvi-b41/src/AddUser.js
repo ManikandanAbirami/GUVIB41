@@ -9,9 +9,17 @@ export class AddUser extends Component {
       name: '',
       phone: ''
     }
+    console.log(this.state);
   }
 
+  inputChangeHandler = (e) => {
+    const state = this.state;
+    state[e.target.name] = e.target.value;
+    this.setState(state);
+    console.log(this.state);
+  }
   render() {
+    const { name, phone } = this.state;
     return (
       <div>
         <Header heading="Add User"></Header>
@@ -19,13 +27,13 @@ export class AddUser extends Component {
           <button className='custom-btn'>Back</button>
           <form className='user-form'>
             <label htmlFor='name' className='label-control'>Name: </label><br />
-            <input id="name" type="text" className="input-control" name="name"></input><br /><br />
+            <input id="name" type="text" className="input-control" name="name" onChange={this.inputChangeHandler}></input><br /><br />
             <label htmlFor='phone' className='label-control'>Phone: </label><br />
-            <input id="phone" type="text" className="input-control" name="phone"></input><br /><br />
+            <input id="phone" type="text" className="input-control" name="phone" onChange={this.inputChangeHandler}></input><br /><br />
             <div className='user-info-container'>
               <span className='user-to-add-heading'>User to be added:</span><br />
-              <span className='user-info'>Name:</span><br />
-              <span className='user-info'>Phone:</span>
+              <span className='user-info'>Name: {name}</span><br />
+              <span className='user-info'>Phone: {phone}</span>
             </div>
             <button type="submit" className='custom-btn add-btn'>Add</button>
           </form>
