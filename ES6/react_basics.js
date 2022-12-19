@@ -77,7 +77,7 @@
 // 3. componentDidMount()
 
 
-
+//Smart vs Dumb component
 //Routing - Important
 //Delete Users
 //React Hooks - Important
