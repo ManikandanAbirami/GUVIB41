@@ -29,9 +29,24 @@ export class App extends Component {
     this.state = {
       userListToShow: []
     }
+    console.log("Constructor called");
+  }
+
+  componentDidMount() {
+    let newUser = {
+      id: 1,
+      name: "Guvi",
+      phone: "45454545455"
+    }
+    let userList = this.state.userListToShow;
+    userList.push(newUser);
+    this.setState({ userListToShow: userList });
+    console.log("Component Did Mount");
+    console.log("State", this.state);
   }
 
   render() {
+    console.log("Render called!!!");
     return (
       <div className='component-container'>
         <Header heading="Phone Directory Application" />

@@ -71,6 +71,11 @@
 //Updating - denotes the instance of a component being updated by props or state.
 //Unmounting - refers to the component being removed from DOM.
 
+// MOUNTING - Inside Mounting process, a component's lifecycle is defined by the following methods,
+// 1. constructor()
+// 2. render()
+// 3. componentDidMount()
+
 
 
 //Routing - Important
