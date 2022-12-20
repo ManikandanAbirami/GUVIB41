@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import './App.css';
-import Header from './Header';
+import './ShowUser.css';
+import Header from './common/Header';
 
-export class App extends Component {
+export class ShowUser extends Component {
   // users = [
   //   {
   //     id: 100,
@@ -79,4 +79,4 @@ export class App extends Component {
 
 //ReactDOM.render(ar1, arg2); arg1 - What to render, where to render.
 
-export default App;
+export default ShowUser;

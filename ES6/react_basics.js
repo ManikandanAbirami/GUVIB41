@@ -64,6 +64,7 @@
 //5. Whenever state is changed, the render() method of the class is called again.
 
 //Component Lifecycle - Important
+//To refer - https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 //1. The component lifecycle in React varies from one process to another.
 //2. There are totally 3 process - Mounting, Updating, and Unmounting.
 //Mounting - It refers to the instance(object is an instance of class) 
@@ -76,8 +77,15 @@
 // 2. render()
 // 3. componentDidMount()
 
+//********************** Task: ********************************
+// componentDidUpdate()
+// componentWillUnmount()
+
 
 //Smart vs Dumb component
+//Smart Component - It describes how things work(container - Provides data and logic)
+//Dumb Component - It describes how things look(presentational - Presents only data on the DOM)
+
 //Routing - Important
 //Delete Users
 //React Hooks - Important

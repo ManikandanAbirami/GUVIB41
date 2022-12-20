@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from './Header'
+import Header from './common/Header'
 import './AddUser.css'
 export class AddUser extends Component {
   constructor() {
@@ -10,6 +10,7 @@ export class AddUser extends Component {
       phone: ''
     }
     console.log(this.state);
+    console.log("Constructor called - Add User");
   }
 
   inputChangeHandler = (e) => {
@@ -17,8 +18,10 @@ export class AddUser extends Component {
     state[e.target.name] = e.target.value;
     this.setState(state);
     console.log(this.state);
+    console.log("inputChangeHandler called!!! - Add User");
   }
   render() {
+    console.log("Render called!!! - Add User");
     const { name, phone } = this.state;
     return (
       <div>
