@@ -46,6 +46,10 @@ export class ShowUser extends Component {
     console.log("State", this.state);
   }
 
+  onDeletedClick = (userId) => {
+    this.props.deleteUserHandler(userId);
+  }
+
   render() {
     console.log("Render called!!!");
     return (
@@ -53,7 +57,7 @@ export class ShowUser extends Component {
         <Header heading="Phone Directory Application" />
         <div className='component-body-container'>
 
-          <Link to="/add">
+          <Link to="/addUser">
             <button className='custom-btn add-btn'> Add </button>
           </Link>
 
@@ -67,7 +71,8 @@ export class ShowUser extends Component {
                 <span className='grid-item'> {user.username} </span>
                 <span className='grid-item'> {user.phone} </span>
                 <span className='grid-item action-btn-container'>
-                  <button className='custom-btn delete-btn' onClick={this.deleteHandler.bind(this, "Item Deleted!!!")}>Delete</button>
+                  <button className='custom-btn delete-btn'
+                    onClick={this.onDeletedClick.bind(user.id)}>Delete</button>
                 </span>
               </div>
             })
