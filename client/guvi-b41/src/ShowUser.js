@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './ShowUser.css';
-import Header from './common/Header';
+import Header from './Header';
+import { Link } from 'react-router-dom';
 
 export class ShowUser extends Component {
   // users = [
@@ -51,17 +52,20 @@ export class ShowUser extends Component {
       <div className='component-container'>
         <Header heading="Phone Directory Application" />
         <div className='component-body-container'>
-          <button className='custom-btn add-btn'> Add </button>
+
+          <Link to="/add">
+            <button className='custom-btn add-btn'> Add </button>
+          </Link>
 
           <div className='grid-container heading-container'>
             <span className='grid-item name-heading'> Name </span>
             <span className='grid-item phone-heading'> Ph No </span>
           </div>
           {
-            this.state.userListToShow.map(user => {
+            this.props.userList.map(user => {
               return <div key={user.id} className='grid-container'>
-                <span className='grid-item'> {user.name} </span>
-                <span className='grid-item'> {user.ph} </span>
+                <span className='grid-item'> {user.username} </span>
+                <span className='grid-item'> {user.phone} </span>
                 <span className='grid-item action-btn-container'>
                   <button className='custom-btn delete-btn' onClick={this.deleteHandler.bind(this, "Item Deleted!!!")}>Delete</button>
                 </span>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Header from './common/Header'
+import Header from './Header'
 import './AddUser.css'
+import { Link } from 'react-router-dom';
 export class AddUser extends Component {
   constructor() {
     super();
@@ -33,7 +34,9 @@ export class AddUser extends Component {
       <div>
         <Header heading="Add User"></Header>
         <div className='component-body-container'>
-          <button className='custom-btn'>Back</button>
+          <Link to="/">
+            <button className='custom-btn'>Back</button>
+          </Link>
           <form className='user-form' onSubmit={this.onFormSubmitted.bind(this)}>
             <label htmlFor='username' className='label-control'>Name: </label><br />
             <input id="username" type="text" className="input-control" name="username" onChange={this.inputChangeHandler}></input><br /><br />
