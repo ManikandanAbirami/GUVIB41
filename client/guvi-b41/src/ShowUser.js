@@ -47,6 +47,7 @@ export class ShowUser extends Component {
   }
 
   onDeletedClick = (userId) => {
+    console.log("$$$$$$$$$" + userId);
     this.props.deleteUserHandler(userId);
   }
 

@@ -86,7 +86,8 @@
 //Smart Component - It describes how things work(container - Provides data and logic)
 //Dumb Component - It describes how things look(presentational - Presents only data on the DOM)
 
-//Routing - Important
+//Routing - Important : Based on the URL that a user visits, specific content is 
+//          loaded on the page (Router --> Routes --> Route)
 //Delete Users
 //React Hooks - Important
 
