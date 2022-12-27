@@ -90,6 +90,8 @@
 //          loaded on the page (Router --> Routes --> Route)
 //Delete Users
 //React Hooks - Important
+//useState - It is hook that always returns a stateful value and a function that updates it.
+//           (Value and a function)
 
 
 
