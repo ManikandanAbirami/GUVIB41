@@ -41,6 +41,7 @@ export class ShowUser extends Component {
     }
     let userList = this.state.userListToShow;
     userList.push(newUser);
+
     this.setState({ userListToShow: userList });
     console.log("Component Did Mount");
     console.log("State", this.state);

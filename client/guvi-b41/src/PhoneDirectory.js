@@ -24,9 +24,6 @@ class PhoneDirectory extends Component {
     let userList = this.state.userList;
     let userIndex = 0;
     userList.forEach(function (user, index) {
-      console.log("Index...... " + index);
-      console.log("userId...... " + userId);
-      console.log("user.id...... " + user.id);
       if (user.id === userId) {
         userIndex = index;
       }
@@ -46,7 +43,6 @@ class PhoneDirectory extends Component {
     }
     userListNew.push(newUser);
     this.setState({ userList: userListNew });
-    console.log(this.state.userList);
   }
 
   render() {

@@ -3,25 +3,46 @@ import './App.css';
 import React, { Component, useState, useEffect } from 'react'
 import { Button } from 'antd'
 
+const lazyValue = () => {
+  return 'Hello, Guvi WD-41';
+}
+
 function App() {
-  const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    console.log("About to execute useEffect!!!");
-    document.title = `Clicked ${count} times`;
-  })
+  const [state, setState] = useState(() => console.log('Hello world!!'));
+  // const arr = useState(() => console.log('Hello world!!'));
+  // const state = arr[0];
+  // const setState = arr[1];
+  // console.log(arr)
 
-  const increment = () => {
-    console.log("About to execute setcount!!!");
-    setCount(count + 1);
-  }
   return (
     <div>
-      <h2>Counter App</h2>
-      <Button type='primary' onClick={increment}>Clicked {count} times</Button>
+      <h1 onClick={() => {
+        setState(Math.random())
+      }}>
+        State Value: {state}
+      </h1>
     </div>
   )
 }
+
+// function App() {
+//   const [count, setCount] = useState(0);
+
+//   useEffect(() => {
+//     document.title = `Clicked ${count} times`;
+//   })
+
+//   const increment = () => {
+//     setCount(count + 1);
+//   }
+//   return (
+//     <div>
+//       <h2>Counter App</h2>
+//       <Button type='primary' onClick={increment}>Clicked {count} times</Button>
+//     </div>
+//   )
+// }
 
 // class App extends Component {
 //   state = {

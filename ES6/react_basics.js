@@ -91,7 +91,9 @@
 //Delete Users
 //React Hooks - Important
 //useState - It is hook that always returns a stateful value and a function that updates it.
-//           (Value and a function)
+//           (Value and a function).
+//         - Lazy state initialization, functional update, direct update, Re-creating
+//
 
 
 
