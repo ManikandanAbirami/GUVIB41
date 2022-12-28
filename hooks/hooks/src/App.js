@@ -9,18 +9,20 @@ const lazyValue = () => {
 
 function App() {
 
-  const [state, setState] = useState(() => console.log('Hello world!!'));
+  const [counter, setCounter] = useState(5);
   // const arr = useState(() => console.log('Hello world!!'));
   // const state = arr[0];
   // const setState = arr[1];
   // console.log(arr)
-
   return (
     <div>
       <h1 onClick={() => {
-        setState(Math.random())
+        setCounter((a) => { //functional update
+          return a + 1;
+        })
+        // setCounter(counter + 1); //direct
       }}>
-        State Value: {state}
+        Counter: {counter}
       </h1>
     </div>
   )
