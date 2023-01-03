@@ -20,3 +20,9 @@
 //4. Event Loop
 
 //Basic Routing
+//req.url - It will always contain the full path of the client request
+//Routing - All client requests are not same, we should respond differently 
+//           based on the requested url path
+
+//Dynamic Response:
+//Endpoint that accepts arguments via query parameters
