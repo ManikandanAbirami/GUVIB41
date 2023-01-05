@@ -26,3 +26,6 @@
 
 //Dynamic Response:
 //Endpoint that accepts arguments via query parameters
+
+//File Serving
+//core modules in Node.js - http, querystring, fs
