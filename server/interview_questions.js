@@ -29,3 +29,16 @@
 
 //File Serving
 //core modules in Node.js - http, querystring, fs
+
+//Express.js:
+//Fast and minimalist web framework for Node.js
+//Express is a replacement for the core http module.
+//The major difference berween http and express is routing.
+//Express comes with a built in router!
+
+//Instead of http module use express to do the following,
+//1. Text
+//2. json
+//3. Querystring
+//4. file serving
+//5. Not found - give a try
