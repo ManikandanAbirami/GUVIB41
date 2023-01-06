@@ -13,6 +13,7 @@ app.listen(port, () => console.log(`Server listening on port ${port}`));
 
 async function getProducts(req, res) {
   const productsFile = path.join(__dirname, '../products.json');
+  res.setHeader('Access-Control-Allow-Origin', '*');
   try {
     const data = await fs.readFile(productsFile)
     res.json(JSON.parse(data))

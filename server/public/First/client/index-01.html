@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Node js API</title>
+</head>
+
+<body>
+  <script>
+    const url = 'http://localhost:1337/products';
+    fetch(url).then(res => res.json().then(products => console.log(products)));
+  </script>
+</body>
+
+</html>

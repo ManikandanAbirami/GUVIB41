@@ -42,3 +42,5 @@
 //3. Querystring
 //4. file serving
 //5. Not found - give a try
+
+//CORS - Cross Origin Resource Sharing
