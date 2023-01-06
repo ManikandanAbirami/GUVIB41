@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
   <title>Node js API</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
 </head>
 
-<body>
+<body class="w-100 sans-serif bg-white">
   <script>
-    const url = 'http://localhost:1337/products';
-    fetch(url).then(res => res.json().then(products => console.log(products)));
+
+    fetchJSON('http://localhost:1337/products')
+      .then(products => document.body.innerHTML = renderPrints(products.slice(0, 25)))
+
+    function fetchJSON(url) {
+      return fetch(url).then(res => res.json())
+    }
+
+    function renderPrints(prints) {
+      return `
+          <article>
+            <h2 class="f3 fw4 pa3 mv0">Prints</h2>
+            <div class="cf pa2">
+              ${prints.map(renderPrint).join('')}
+            </div>
+          </article>
+        `
+    }
+
+    function renderPrint(print) {
+      console.log(print)
+      return `
+          <div class="fl w-50 w-25-m w-20-l pa2">
+            <a href="${print.link}" target="_blank" class="db link dim tc">
+              <div style="background: url(${print.imgThumb})" class="w-100 db outline black-10 h4 cover" alt="${print.description}">
+              </div>
+              <dl class="mt2 f6 lh-copy">
+                <dt class="clip">Title</dt>
+                <dd class="ml0 black truncate w-100">
+                  ${print.tags.slice(0, 3).join(', ')}
+                </dd>
+                <dt class="clip">Artist</dt>
+                <dd class="ml0 gray truncate w-100">${print.userName}</dd>
+              </dl>
+            </a>
+          </div>
+        `
+    }
+
   </script>
 </body>
 
