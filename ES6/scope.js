@@ -66,6 +66,8 @@ function grandFather() {
 
 grandFather();
 
-//Lexical scope refers to the fact that when one function, referred to as the parent funciton contains another function
-//referred to as the child function, then the child function can access everything defined inside the parent function.
+//Lexical scope refers to the fact that when one function, 
+//referred to as the parent funciton contains another function
+//referred to as the child function, 
+//then the child function can access everything defined inside the parent function.
 //Top-down approach!!

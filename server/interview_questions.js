@@ -1,3 +1,26 @@
+//Missed topics:
+
+// template literals
+// spred & rest prarameter
+// array & object destructure
+// property shorthand
+// Deploying react to netlify
+// Working with array lists
+// useRef, useReducer
+// Front end game demonstration - hangman / tictactoe / tile match
+// Context-API
+// What is context, provide, createContext
+// Avoid props drilling
+// Session-based Hands-on practice Task with any Admin Dashboard
+// Playing around with API
+// fetch() or axios
+// Completed recap by implementing any Front end game/CRUD to understand the importance of hooks 
+// ex: - hangman / tictactoe / tile match
+// Intro to Redux - to understand the state management with react application
+
+
+
+
 //Node.js
 //Definition - Node.js is an open source and cross-platform runtime environment
 //             for executing JavaScript code outside of a browser.
@@ -5,7 +28,7 @@
 //Advantages of using node.js
 //1. Open source 
 //2. Multi-Platform support
-//3. Wide Support through NPM(Node package manager) Library
+//3. Wide Support through NPM(Node package manager) Library - https://www.npmjs.com/
 
 //Data types:
 //There are mainly two custom data types used in node.js:
