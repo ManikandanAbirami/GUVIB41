@@ -76,3 +76,9 @@
 //              of an asynchronous operation is ready.
 
 //2. Callback Hell - Callback has deeply nested structure.
+
+//3. PROMISE - Holds the eventual result of an asynchronous operation.
+//             A Promise basically promises you that it would give you the 
+//             result of an asynchronous operation. 
+//             Promise object can be in one of the 3 states. 
+//             Pending -->(async operation)-->Fulfilled(Resolved)/Rejected

@@ -7,11 +7,13 @@ getProduct(1, function (product) {
   console.log('Product', product);
   getListofMobiles(product.productName, (items) => {
     console.log('Mobiles', items);
-    getItems(items[1], function (items) {
-      console.log('Items', items);
-    })
+    getItems(items[1], getItems(items));
   })
 })
+
+function items(items) {
+  console.log('Items', items);
+}
 
 //Synchronous
 const product = getProduct(1);
