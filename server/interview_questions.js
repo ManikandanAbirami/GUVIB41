@@ -67,3 +67,10 @@
 //5. Not found - give a try
 
 //CORS - Cross Origin Resource Sharing
+
+//Async
+//1. Callback - A callback is a function which is called when a task is completed.
+//              Thus, it helps in preventing any kind of blocking and a callback function
+//              allows other code to run in the meantime.
+//              A callback is a function that we are going to call when the result
+//              of an asynchronous operation is ready.
