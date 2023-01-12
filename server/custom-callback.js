@@ -2,6 +2,7 @@
 // const product = getProduct(1);
 // console.log(product);
 
+//Asynchronous
 getProduct(1, function (product) {
   console.log('Product', product);
   getListofMobiles(product.productName, (items) => {
@@ -11,6 +12,14 @@ getProduct(1, function (product) {
     })
   })
 })
+
+//Synchronous
+const product = getProduct(1);
+const listofMobiles = getListofMobiles(product.productName);
+const items = getItems(listofMobiles[0]);
+
+
+
 
 function getProduct(id, callback) {
   setTimeout(() => {

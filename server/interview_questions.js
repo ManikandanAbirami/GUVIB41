@@ -74,3 +74,5 @@
 //              allows other code to run in the meantime.
 //              A callback is a function that we are going to call when the result
 //              of an asynchronous operation is ready.
+
+//2. Callback Hell - Callback has deeply nested structure.
