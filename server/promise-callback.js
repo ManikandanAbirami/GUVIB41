@@ -41,6 +41,8 @@ function getItems(item, callback) {
 
 getProduct(1)
   .then(product => getListofMobiles(product.productName))
-  .then(items => getItems(items[1]));
+  .then(items => getItems(items[1]))
+  .then(item => console.log('Item name: ', item))
+  .catch(err => console.log('Error: ', err.message));
 
 // console.log(getProduct(1));
