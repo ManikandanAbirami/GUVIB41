@@ -1,0 +1,11 @@
+
+//Script to create a TABLE
+
+USE `guvib41-crud`;
+CREATE TABLE `users` (
+`id` int(10) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`full_name` varchar(255) DEFAULT NULL,
+`email_address` varchar(255) DEFAULT NULL,
+`city` varchar(255) DEFAULT NULL,
+`country` varchar(255) DEFAULT NULL
+)
