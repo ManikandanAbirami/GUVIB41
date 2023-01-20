@@ -82,3 +82,21 @@
 //             result of an asynchronous operation. 
 //             Promise object can be in one of the 3 states. 
 //             Pending -->(async operation)-->Fulfilled(Resolved)/Rejected
+
+//Application(Web/Mobile) ==> FrontEnd(UI/Client), BackEnd(Server), DataBase(DB)
+
+//DB - DataBase
+//Relational DB vs Non-Relational DB
+
+//1. DataBase - A database is a set of data held in a computer that can 
+//              be accessible in various manners.
+
+//2. Relational DataBase - A relational database is structured, meaning the data 
+//                         is organized in tables. Many times, the data within these 
+//                         tables have relationships with one another, or dependencies.
+//                         (SQL, MySQL, ORACLE) - Structured Query Language
+
+//3. Non-Relational DataBase - A non relational database is document-oriented, meaning, 
+//                             all information gets stored in more of a laundry list order. 
+//                             Within a single construct, or document, you will have all of 
+//                             your data listed out.(NoSQL) - MongoDB
