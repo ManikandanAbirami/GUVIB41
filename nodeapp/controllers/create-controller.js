@@ -12,7 +12,7 @@ module.exports = {
     };
     createModel.createData(inputData, function (data) {
       res.redirect('/crud/form');
-      console.log(data.affectedRows + " record created");
+      console.log(data.affectedRows + " record created!!!");
     })
   }
 }

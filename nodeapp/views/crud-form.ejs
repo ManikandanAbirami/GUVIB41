@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    .crud-form {
+      height: 100vh;
+      border: 2px solid #f1f1f1;
+      padding: 16px;
+      background-color: white;
+      width: 30%;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    button[type=submit] {
+      background-color: #434140;
+      color: #ffffff;
+      padding: 10px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+      font-size: 20px;
+    }
+
+    button[type=submit]:hover {
+      background-color: #3d3c3c;
+    }
+  </style>
+</head>
+
+<body>
+  <!--====form section start====-->
+  <!--====form section start====-->
+  <div class="crud-form">
+    <form action="<%=(typeof editData!='undefined')?'/crud/update/'+editData.id:'/crud/create'%>" method="POST">
+      <input type="text" placeholder="Full Name" name="full_name" required
+        value="<%=(typeof editData!='undefined')? editData.full_name:''%>">
+
+      <input type="email" placeholder="Email Address" name="email_address" required
+        value="<%=(typeof editData!='undefined')? editData.email_address:''%>">
+
+      <input type="city" placeholder=" City" name="city" required
+        value="<%=(typeof editData!='undefined')? editData.city:''%>">
+
+      <input type="text" placeholder="Country" name="country" required
+        value="<%=(typeof editData!='undefined')? editData.country:''%>">
+      <button type="submit">Submit</button>
+  </div>
+  </div>
+  <!--====form section start====-->
+  <!--====form section start====-->
+
+</body>
+
+</html>
