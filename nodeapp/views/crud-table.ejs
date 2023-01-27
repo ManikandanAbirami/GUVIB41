@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    table,
+    td,
+    th {
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    .table-data {
+      overflow-x: auto;
+    }
+
+    th,
+    td {
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="table-data">
+    <table border="1">
+      <tr>
+        <th>S.N</th>
+        <th>Full Name</th>
+        <th>Email Address</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+
+      <% if(fetchData.length!=0){ var i=1; fetchData.forEach(function(data){ %>
+        <tr>
+          <td>
+            <%=i; %>
+          </td>
+          <td>
+            <%=data.full_name %>
+          </td>
+          <td>
+            <%=data.email_address %>
+          </td>
+          <td>
+            <%=data.city %>
+          </td>
+          <td>
+            <%=data.country %>
+          </td>
+          <td><a href="/crud/edit/<%=data.id%>">Edit</a></td>
+          <td><a href="/crud/delete/<%=data.id%>">Delete</a></td>
+        </tr>
+        <% i++; }) %>
+          <% } else{ %>
+            <tr>
+              <td colspan="7">No Data Found</td>
+            </tr>
+            <% } %>
+    </table>
+  </div>
+</body>
+
+</html>

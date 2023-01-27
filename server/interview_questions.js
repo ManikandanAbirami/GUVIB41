@@ -100,3 +100,8 @@
 //                             all information gets stored in more of a laundry list order. 
 //                             Within a single construct, or document, you will have all of 
 //                             your data listed out.(NoSQL) - MongoDB
+
+//MVC:
+//Model is data part.
+//View is User Interface part.
+//Controller is request - response handler.
