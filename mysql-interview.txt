@@ -1,0 +1,27 @@
+MySQL - Most popular open-source DataBase Management System(DBMS)
+-----------------------------------------------------------------
+
+MySQL Basics:
+-------------
+
+Data: It can be facts releated to any object in consideration.
+
+DataBase: Systematic collection of Data. It makes data management easy.
+
+Types of DataBases:
+
+1. Distributed DataBases
+2. Releational DataBases(MySQL, SQL...) RDBMS
+3. Object-oriented DataBases
+4. Centralized Database
+5. Open-source DataBases
+6. Cloud DataBases
+7. Data warehouses
+8. NoSQL DataBases(MongoDB)
+9. Graph DataBases
+10.OLTP DataBases
+11.Personal DataBases
+12.Multimodal DataBases
+13.Document/JSON DataBases
+14.Hierarchical
+15.Network DBMS
