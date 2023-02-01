@@ -11,13 +11,14 @@ DataBase: Systematic collection of Data. It makes data management easy.
 Types of DataBases:
 
 1. Distributed DataBases
-2. Releational DataBases(MySQL, SQL...) RDBMS
+2. Releational DataBases(MySQL, SQL...) RDBMS - It defines database relationships 
+                                                in the form of tables
 3. Object-oriented DataBases
 4. Centralized Database
 5. Open-source DataBases
 6. Cloud DataBases
 7. Data warehouses
-8. NoSQL DataBases(MongoDB)
+8. NoSQL DataBases(MongoDB) - Very efficient in analyzing large-size unstructured data
 9. Graph DataBases
 10.OLTP DataBases
 11.Personal DataBases
