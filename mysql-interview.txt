@@ -9,6 +9,7 @@ Data: It can be facts releated to any object in consideration.
 DataBase: Systematic collection of Data. It makes data management easy.
 
 Types of DataBases:
+-------------------
 
 1. Distributed DataBases
 2. Releational DataBases(MySQL, SQL...) RDBMS - It defines database relationships 
@@ -26,3 +27,18 @@ Types of DataBases:
 13.Document/JSON DataBases
 14.Hierarchical
 15.Network DBMS
+
+DataBase Components:
+--------------------
+
+1. Hardware
+2. Software
+3. Data
+4. Procedure - set of instructions
+5. DataBase Access Language - Some specific commands 
+
+DataBase Management System(DBMS):
+---------------------------------
+
+--> Is a collection of programs that enable its users to access databases,
+    manipulate data, report, and represent data.
