@@ -12,8 +12,8 @@ Types of DataBases:
 -------------------
 
 1. Distributed DataBases
-2. Releational DataBases(MySQL, SQL...) RDBMS - It defines database relationships 
-                                                in the form of tables
+2. Releational DataBases(Oracle, Sybase, MySQL, MS SQL Server...) RDBMS - 
+                                It defines database relationships in the form of tables
 3. Object-oriented DataBases
 4. Centralized Database
 5. Open-source DataBases
@@ -42,3 +42,37 @@ DataBase Management System(DBMS):
 
 --> Is a collection of programs that enable its users to access databases,
     manipulate data, report, and represent data.
+
+Advantages:
+
+1. Store and retrieve data
+2. Offers security
+3. Reduced Application Development Time
+
+Disadvantages:
+
+1. Cost of Hardware and Software
+2. Training is required for sure to use DBMS
+3. If not used carefully we lose some data.
+
+SQL - Structured Query Language
+-------------------------------
+
+SELECT * FROM students WHERE Age > 11
+
+SQL is used for:
+----------------
+
+1. It helps users to access data in the RDBMS system.
+2. It helps you to describe data.
+3. It helps to define and manipulate data.
+4. With the help of SQL, we can create and drop databases and tables.
+
+Types of SQL Statements/Commands:
+--------------------------------
+
+1. Data Definition Language(DDL) ***** DDL - CREATE, ALTER, TRUNCATE and DROP
+2. Data Manipulation Language(DML) *****
+3. Data Control Language(DCL) **
+4. Transaction Control Language(TCL) **
+5. Data Query Language(DQL) ***

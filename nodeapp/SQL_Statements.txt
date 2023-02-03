@@ -1,0 +1,22 @@
+//To Crate table
+CREATE TABLE `users` (
+`id` int(10) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`full_name` varchar(255) DEFAULT NULL,
+`email_address` varchar(255) DEFAULT NULL,
+`city` varchar(255) DEFAULT NULL,
+`country` varchar(255) DEFAULT NULL
+)
+
+//To remove table completely
+DROP TABLE USERS;
+
+//To remove all rows in table
+TRUNCATE TABLE USERS;
+
+INSERT INTO users (full_name, email_address, city, country)
+values
+('John', 'john@gmail.com', 'Chennai','India'),
+('Jack', 'jack@gmail.com', 'Chennai','India'),
+('Will', 'will@gmail.com', 'Chennai','India');
+
+SELECT * FROM users
