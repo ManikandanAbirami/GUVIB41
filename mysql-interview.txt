@@ -72,7 +72,10 @@ Types of SQL Statements/Commands:
 --------------------------------
 
 1. Data Definition Language(DDL) ***** DDL - CREATE, ALTER, TRUNCATE and DROP
-2. Data Manipulation Language(DML) *****
+2. Data Manipulation Language(DML) ***** DML - INSERT, SELECT, UPDATE, DELETE
 3. Data Control Language(DCL) **
 4. Transaction Control Language(TCL) **
 5. Data Query Language(DQL) ***
+
+
+Primary key - must contain UNIQUE values, it should be NOT NULL

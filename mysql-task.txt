@@ -1,0 +1,13 @@
+SELECT * FROM users;
+
+DELETE FROM users;
+
+INSERT INTO users (full_name, email_address, city, country, gender)
+values
+('Joey', 'john@gmail.com', 'Chennai','India', 'Male'),
+('Chandler', 'john@gmail.com', 'Chennai','India', 'Male'),
+('Monica', 'john@gmail.com', 'Chennai','India', 'Male')
+
+UPDATE users
+SET email_address = 'joey@gmail.com'
+WHERE id = 10
