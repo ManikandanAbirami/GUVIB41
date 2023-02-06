@@ -1,7 +1,7 @@
 //Missed topics:
 
 // template literals
-// spred & rest prarameter
+// spread & rest prarameter
 // array & object destructure
 // property shorthand
 // Deploying react to netlify
