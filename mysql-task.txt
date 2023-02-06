@@ -11,3 +11,66 @@ values
 UPDATE users
 SET email_address = 'joey@gmail.com'
 WHERE id = 10
+
+
+CREATE TABLE `all_data_types` (
+  `varchar` VARCHAR( 20 ),
+    `tinyint` TINYINT  ,
+    `text` TEXT  ,
+    `date` DATE  ,
+    `smallint` SMALLINT  ,
+    `mediumint` MEDIUMINT  ,
+    `int` INT  ,
+    `bigint` BIGINT  ,
+    `float` FLOAT( 10, 2 )  ,
+    `double` DOUBLE  ,
+    `decimal` DECIMAL( 10, 2 )  ,
+    `datetime` DATETIME  ,
+    `timestamp` TIMESTAMP  ,
+    `time` TIME  ,
+    `year` YEAR  ,
+    `char` CHAR( 10 )  ,
+    `tinyblob` TINYBLOB  ,
+    `tinytext` TINYTEXT  ,
+    `blob` BLOB  ,
+    `mediumblob` MEDIUMBLOB  ,
+    `mediumtext` MEDIUMTEXT  ,
+    `longblob` LONGBLOB  ,
+    `longtext` LONGTEXT  ,
+    `enum` ENUM( '1', '2', '3' )  ,
+    `set` SET( '1', '2', '3' )  ,
+    `bool` BOOL  ,
+    `binary` BINARY( 20 )  ,
+    `varbinary` VARBINARY( 20 )
+);
+
+
+CREATE DATABASE movies;
+
+CREATE DATABASE IF NOT EXISTS movies;
+
+CREATE TABLE 
+`TableName` (`fieldname` datatype [optional parameters])
+
+USE `movies`;
+CREATE TABLE `series` (
+`id` int(10) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`name` varchar(100) NOT NULL,
+`genre` varchar(50) NOT NULL,
+`director` varchar(255) DEFAULT NULL
+);
+
+INSERT INTO series (name, genre, releasedon)
+VALUES
+('wed', 'ACTION', NOW())
+
+ALTER TABLE series modify column releasedon DATETIME;
+
+SELECT ALL genre FROM series;
+
+SELECT * FROM series order by id asc
+
+SELECT [DISTINCT|ALL ] { * | [fieldExpression [AS newName]} 
+FROM tableName [alias] 
+[WHERE condition][GROUP BY fieldName(s)]  
+[HAVING condition] ORDER BY fieldName(s)
