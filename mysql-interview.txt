@@ -78,4 +78,50 @@ Types of SQL Statements/Commands:
 5. Data Query Language(DQL) ***
 
 
-Primary key - must contain UNIQUE values, it should be NOT NULL
+INSERT INTO TABLE,
+CREATE TABLE,
+SELET,
+WHERE,
+ALTER,
+GROUP BY,
+DELETE,
+TRUNCATE,
+DROP,
+USE,
+ORDER BY,
+UPDATE,
+DISTINCT
+
+GROUP BY vs DISTINCT : GROUP BY groups ROWS, where as DISTINCT is just used to get values
+
+Primary key:- 
+
+1. A primary key cannot be NULL
+2. A primary key value must be UNIQUE
+3. The primary key values should rarely be changed
+4. The primary key must be given a value when a new record is inserted.
+
+Composite Key:-
+
+1. A composite key is a primary key composed of multiple columns used to 
+   identify a record uniquely.
+
+Normalization:
+
+1. It is a database design technique that reduces data redundancy(state of being not used)
+2. Normalization rules divides larger tables into smaller tables.
+
+Database Normal Forms:
+
+--> 1NF(First Normal Form)
+--> 2NF
+--> 3NF
+--> BCNF (Boyce-Codd Normal Form)
+--> 4NF
+--> 5NF
+--> 6NF
+
+1NF:
+
+1. Each table cell should contain a single value.
+2. Each record needs to be unique.
