@@ -74,3 +74,29 @@ SELECT [DISTINCT|ALL ] { * | [fieldExpression [AS newName]}
 FROM tableName [alias] 
 [WHERE condition][GROUP BY fieldName(s)]  
 [HAVING condition] ORDER BY fieldName(s)
+
+
+
+USE `DB_Design`;
+CREATE TABLE `books` (
+`id` int(10) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`name` varchar(100) NOT NULL,
+`category` varchar(50) NOT NULL,
+`month_released` int(10) DEFAULT NULL
+);
+
+USE `DB_Design`;
+CREATE TABLE `users` (
+`id` int(10) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`name` varchar(100) NOT NULL,
+`gender` varchar(50) NOT NULL,
+`age` int(10) DEFAULT NULL
+);
+
+USE `DB_Design`;
+CREATE TABLE `user_book` (
+`id` int(10) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`user_id` int(10),
+`book_id` int(10) UNSIGNED NOT NULL,
+FOREIGN KEY (book_id) REFERENCES books(id)
+);
