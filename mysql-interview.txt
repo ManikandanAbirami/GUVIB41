@@ -125,3 +125,16 @@ Database Normal Forms:
 
 1. Each table cell should contain a single value.
 2. Each record needs to be unique.
+
+2NF:
+
+1. Be in 1NF
+2. Foreign key
+
+Foreign key:
+
+1. Foreign key references the primary key of another table. It helps connect your tables.
+2. A foreign key can have a different name from its primary key.
+3. It ensures rows in one table have corresponding rows in another table.
+4. They do not have to be unique.
+4. foreign key can be null.
