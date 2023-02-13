@@ -138,3 +138,34 @@ Foreign key:
 3. It ensures rows in one table have corresponding rows in another table.
 4. They do not have to be unique.
 4. foreign key can be null.
+
+3NF:
+
+1. Rule 1 - be in 2NF
+2. no functional dependencies
+
+BCNF(Boyce-Codd Normal Form):
+
+1. 3.5 Normal Form
+2. Slightly stronger version of 3NF.
+3. Extension of 3NF
+
+4NF:
+
+1. Rule 1 - be in 3NF(1NF, 2NF, 3NF, BCNF)
+2. Independent and multivalued data
+3. It eliminates harmful redundancy
+
+5NF:
+
+1. Rule 1 - be in 4NF
+2. It is deigned to remove redundancy effectively
+
+6NF:
+
+1. It is not standardized
+
+
+JOINS:
+
+1. Joins help us to reteieve data from two or more tables

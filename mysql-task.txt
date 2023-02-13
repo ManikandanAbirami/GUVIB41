@@ -100,3 +100,13 @@ CREATE TABLE `user_book` (
 `book_id` int(10) UNSIGNED NOT NULL,
 FOREIGN KEY (book_id) REFERENCES books(id)
 );
+
+
+SELECT * FROM user_book AS ub
+INNER JOIN books AS b
+ON b.id = ub.book_id
+WHERE b.month_released = 'JAN'
+
+SELECT * FROM user_book
+INNER JOIN books
+ON books.id = user_book.book_id
