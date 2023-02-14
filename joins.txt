@@ -1,0 +1,90 @@
+USE `DB_Design`;
+CREATE TABLE `Employee_Department` (
+`name` varchar(100),
+`id` int(10) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT
+);
+
+USE `DB_Design`;
+CREATE TABLE `office_locations` (
+address varchar(100),
+id int(10) unsigned primary key not null auto_increment
+);
+
+ALTER TABLE Employee
+ADD COLUMN office_id int(10);
+
+CREATE TABLE `Employee` (
+`name` varchar(100),
+`id` int(10) UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+`address` varchar(100),
+`Department_id` int(10) UNSIGNED,
+FOREIGN KEY (Department_id) REFERENCES Employee_Department(id)
+);
+INSERT INTO `Employee_Department` VALUES ('Information Technology','1'),
+('HR','2'),
+('Finance','3'),
+('Accounting','4'),
+('Housekeeping','5'),
+('Security','6'),
+('Support','7'),
+('Contract Staff','8'),
+('Sales','9'),
+('Management','10');
+INSERT INTO `Employee` VALUES ('Veniam','1','640 Damon Junction\nEast Mathew, NY 68818','3'),
+('Molestiae','2','6658 Hollis Club\nErnamouth, TX 19743','10'),
+('Officiis','3','59965 Mason Neck Apt. 985\nKareemborough, NV 85535','9'),
+('Rerum','4','91067 Geovany Fort\nHanefort, WA 92863','6'),
+('Et','5','7647 Reva Shores Suite 970\nNew Audrafort, OH 17846-5397','2'),
+('Et','6','9419 Carmela Burg Apt. 687\nAimeebury, SD 32389-4489','8'),
+('Laborum','7','6961 Weissnat Drive\nDonnellyfort, MT 53947','6'),
+('Cupiditate','8','117 Nellie Summit Suite 982\nSouth Heavenfurt, CA 45675','8'),
+('Eveniet','9','9086 Mariam Square Suite 698\nSouth Dulce, MT 82861-3079','2'),
+('Rerum','10','783 Goodwin Burgs Apt. 429\nWillmsfort, UT 42820-1019','9'),
+('Quis','11','42928 Ernesto Trail\nEast Jules, WV 87169-2851','1'),
+('Esse','12','161 Kassulke Stravenue Apt. 937\nWilliamsonton, MS 62622','7'),
+('Dolores','13','22811 Liliana Trail Apt. 890\nSouth Ernesto, MT 04134','10'),
+('Ut','14','981 Laron Overpass Suite 361\nWest Olahaven, FL 46982-7801','10'),
+('Mollitia','15','411 Louisa Mill\nSouth Maximefort, MA 04903','8'),
+('Necessitatibus','16','2853 Jonathon Turnpike\nQuitzonville, KY 54776','4'),
+('Fugit','17','3647 Rosalinda Corner\nMaureenstad, RI 96605','5'),
+('Corporis','18','03559 Nicholas Circle Apt. 364\nWest Zettaberg, ID 58592-3447','8'),
+('Neque','19','56111 Alysson Gateway Apt. 212\nLeschbury, VT 90605-2306','8'),
+('Velit','20','263 O\'Keefe Avenue Apt. 884\nWest Missouri, IL 50303','6');
+
+INSERT INTO `office_locations`(address) VALUES
+('Chennai'),
+('Banglore'),
+('Perambalur'),
+('Covai'),
+('Thiruvannamalai')
+
+SET SQL_SAFE_UPDATES = 0;
+
+UPDATE Employee
+SET office_id=1
+WHERE id % 2 = 0;
+
+UPDATE Employee
+SET office_id=2
+WHERE id % 3 = 0;
+
+SELECT * FROM employee
+
+SELECT * FROM Employee_Department
+
+SELECT {column_list} FROM tableName1
+INNER JOIN tableName2
+ON {joinCondition}
+
+SELECT Employee.name as Employee_name, Employee_Department.name as Department_name 
+FROM 
+Employee INNER JOIN Employee_Department
+ON Employee.Department_id = Employee_Department.id
+WHERE Employee.name = 'et'
+
+SELECT * from 
+Employee FULL OUTER JOIN office_locations
+ON Employee.office_id = office_locations.id
+
+
+

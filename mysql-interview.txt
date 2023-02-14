@@ -169,3 +169,17 @@ BCNF(Boyce-Codd Normal Form):
 JOINS:
 
 1. Joins help us to reteieve data from two or more tables
+
+Types:
+
+1. Inner Join
+2. Outer Join - Left outer join & Right Outer join
+3. Cross Join
+4. SELF Join
+
+INNER JOIN:
+Is the most common form of JOIN and it is widely used.
+
+LEFT OUTER JOIN:
+This typ of join would fetch all the rows(including NULL values) from the table
+which is on the left side.
