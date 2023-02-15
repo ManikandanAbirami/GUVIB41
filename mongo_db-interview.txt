@@ -43,5 +43,7 @@ MongoDB Basics (Written in c++):
 11.Where to use MongoDB?
    --> Big Data
    --> User Data Management
-   --> Content Management and Delivery
-   --> Mobile and Social Infrastructure
+   --> Content Management and Delivery    
+   --> Mobile and Social Infrastructure 
+
+Basic commands, Insert, Query commands, update, delete.
