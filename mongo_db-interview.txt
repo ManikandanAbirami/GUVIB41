@@ -35,7 +35,7 @@ MongoDB Basics (Written in c++):
    --> Schema less : One collection holds different documents
    --> Single object
    --> No complex joins
-   --> Uses internal memory
+   --> Uses internal memory   
 10.Why MongoDB?
    --> Fast in-place updates
    --> Document oriented storage
