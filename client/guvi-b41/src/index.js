@@ -7,12 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './common/common.css'
 import PhoneDirectory from './PhoneDirectory';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-  <PhoneDirectory />
+  // <PhoneDirectory />
   // </React.StrictMode>
+  <App></App>
 );
 
 // If you want to start measuring performance in your app, pass a function

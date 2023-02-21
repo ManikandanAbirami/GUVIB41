@@ -3,7 +3,7 @@ Redux terminologies:
 
 1. Store - It holds the whole state tree of our application.
 
-2. provider
+2. provider - The <provider> component makes Redux store available to any nested components
 
 3. Reducer - Reducers are functions that take the current state and an action as arguments, and return a new state result.
              It holds the logic and calculation that needed to be performed on the state.
@@ -15,4 +15,11 @@ Redux terminologies:
 6. useSelector - It is used to get the state objects. It is a fucntion that takes the current state as an argument
                  and returns whatever data you want from it.
 
-7. Thunk - 
+7. Thunk - It allows us to dispatch actions manually.
+
+
+Context API:
+------------
+
+Context provides a way to pass data through the component tree without having to pass
+props down manually at every level.
