@@ -1,0 +1,18 @@
+Redux terminologies:
+-------------------
+
+1. Store - It holds the whole state tree of our application.
+
+2. provider
+
+3. Reducer - Reducers are functions that take the current state and an action as arguments, and return a new state result.
+             It holds the logic and calculation that needed to be performed on the state.
+
+4. Action - Actions are plain JS object that contains information.
+
+5. useDispatch - This hook returns a reference to the dispatch function from the Redux store.
+
+6. useSelector - It is used to get the state objects. It is a fucntion that takes the current state as an argument
+                 and returns whatever data you want from it.
+
+7. Thunk - 
