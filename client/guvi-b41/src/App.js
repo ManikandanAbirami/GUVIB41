@@ -7,6 +7,9 @@ import { AppContext } from './context';
 function App() {
   const [users, setUsers] = useState([]);
 
+  //actionType - (ADD, REMOVE, describes the type...)
+  //payload - the actual content
+
   const dispatchUserEvent = (actionType, payload) => {
     switch (actionType) {
       case 'ADD':
